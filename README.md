@@ -1,0 +1,1 @@
+This is a repository for some methods that analyse human learning in complex stochastic systems. 
