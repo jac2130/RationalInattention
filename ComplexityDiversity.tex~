@@ -1,0 +1,100 @@
+% Created 2014-09-09 Tue 16:00
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage[round]{natbib}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{mdframed}
+\usepackage{lipsum}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newenvironment{proof}[1][Proof]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{theorem}[1][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newtcbtheorem[number within=section]{myexamp}{Example}% 
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+\hypersetup{
+colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=blue,%
+urlcolor=black
+}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Complexity and Diversity in Low Probability States}
+\author{Johannes Castner}
+\date{\today}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs Org-mode version 7.8.09}}
+
+\begin{document}
+
+\maketitle
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+\vspace*{1cm}
+
+
+
+ 
+
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{abstract} 
+
+\end{abstract} 
+
+
+\section{Introduction}
+
+\section{Models and Belief Systems.}
+
+\bibliographystyle{plainnat}
+\bibliography{RobustCollectives}
+
+
+
+\end{document}

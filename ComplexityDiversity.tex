@@ -1,0 +1,92 @@
+% Created 2014-09-09 Tue 16:00
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage[round]{natbib}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{mdframed}
+\usepackage{lipsum}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newenvironment{proof}[1][Proof]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{theorem}[1][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newtcbtheorem[number within=section]{myexamp}{Example}% 
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+\hypersetup{
+colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=blue,%
+urlcolor=black
+}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Complexity and Diversity in Low Probability States}
+\author{Johannes Castner}
+\date{\today}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs Org-mode version 7.8.09}}
+
+\begin{document}
+
+\maketitle
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+\vspace*{1cm}
+\newpage
+
+\begin{abstract} 
+
+\end{abstract} 
+
+
+\section{Introduction}
+
+\section{Models and Belief Systems.}
+
+\section{Priors}
+
+Suppose that at any period, $t$, it is known to a decision maker that the system relevant to her decision can be in one of $K$ potential states.  Further, suppose that at period $t$, $K - r_t$ of those have been experienced at least once, so that $r_t$ of them have never before been experienced. What prior is a person to optimally place on a never before experienced stimulus? If $r_t=0$, the optimal prior seems trivial: all states have been experienced at least once and it seems that the optimal model should use simple induction. Let $S=s_1, \ldots, s_K$ denote the set of possible states and $F_t=f_{1, t-1}, \ldots, f_{K, t-1}$ the associated observed frequencies of these states before time $t$. Then if $r_t=0$, the optimal prior probabilities of the $K$ states at time $t$ seem to be $\left\{\pi_{i, t}^{*}\right\}=\left\{\frac{f_{i, t-1}}{\sum_i f_{i, t-1}}\right\}=\left\{\frac{f_{i, t-1}}{t-1}\right\}$. However, induction is not optimal if one wants to avoid expressing complete certainty about the impossibility of not yet experienced events. 
+\\
+
+The fix is to start in period $0$, before any sensory experience begins. If an individual is told that there are, say eight possible events that could happen, what likelihood should she attribute to each of the eight events? In the \textit{absence} of information it seems hopeless to place any probabilities on the eight events. But if one wants to be maximally open minded, there is a cure: maximum entropy.  In other words, in period $0$, set $\pi_{i,0}^{*}=\frac{1}{8}$, for $i=1, \ldots, 8$. More generally, for $K$ states at time $t$, the optimal prior probabilities should then be
+\begin{equation}  
+\pi_{i, t}^{*}=\frac{f_{i, t-1}+\frac{1}{K}}{t}.
+\end{equation}
+Surely, this quantity converges to the right limit (there is no bias) and it does so at the highest rate possible, given the information inherent in the data sequence up to period $t$. When $t$ tends to infinity the probability of a state occurring that has up to now not been observed tends asymptotically to zero ($\lim_{t\rightarrow\infty}\frac{1}{K*t}=0$).  In the beginning we are told that swans can be either black or white. We start with an open mind and attribute equal probability to both, black and white swans. The longer we fail to make a sighting of a black swan, while continuously sighting white ones, the less likely we deem the creature's existence, but we never rule it out completely (only asymptotically). 
+
+\bibliographystyle{plainnat}
+\bibliography{RobustCollectives}
+
+
+
+\end{document}

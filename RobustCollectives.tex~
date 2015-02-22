@@ -1,0 +1,293 @@
+% Created 2014-09-09 Tue 16:00
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage[round]{natbib}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{mdframed}
+\usepackage{lipsum}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newenvironment{proof}[1][Proof]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{theorem}[1][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newtcbtheorem[number within=section]{myexamp}{Example}% 
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+\hypersetup{
+colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=blue,%
+urlcolor=black
+}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Dynamic Interactions Between Systems and Collective Beliefs.}
+\author{Johannes Castner}
+\date{\today}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs Org-mode version 7.8.09}}
+
+\begin{document}
+
+\maketitle
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+\vspace*{1cm}
+
+
+
+ 
+
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{abstract} 
+
+\end{abstract} 
+
+
+\section{Introduction}
+This paper is about dynamic interactions between a collective's model of a system and the system itself. The set of belief systems (models) from which a collective can draw is synthesized from the belief systems held by the individuals who make up the collective. Friedrich \citet*{Hayek48} says that ``\ldots human Reason, with a capital R does not exist in the singular, as given or available to any particular person, as the rationalist approach seems to assume, but must be conceived as an interpersonal process in which anyone's contribution is tested and corrected by others.'' Similarly, but normatively motivated, according to J\"urgen Habermas's democratic principle of ligitimacy ``only those statutes may claim legitimacy that can meet with the assent of all citizens [members of a collective] in a discursive process of legislation that in turn has been legally constituted'' \citep{Habermas98}. While some defend the voicing and consideration of all individual opinions in public debate as intrinsically valuable in their own right—as an individual's \textit{right} to freely express her opinions—this paper corroberates the instrumental value of cognitive diversity to the wellbeing of all—the individual's collective \textit{duty} to truthfully express her opinions.   
+
+
+More specifically, I assume that for the class of decisions here under consideration society has legally constituted that extreme caution is the only priority when combining arguments from the minds of the collective's members to construct ligitimate statutes. This is the so called \textit{maximin} decision rule. A deterministic single model version of this rule was originally proposed by \citet{Wald45}. More recently \citet*{Hansen08} recommend the \textit{maximin} decision rule for multiple stochastic models—which I will use here—as a \textit{robust} rule. We can derive deterministic single model versions from John Rawls's Difference Principle \citep{Rawls05} or from Gandhi's Talisman \citep{Nayyar58} if we can interpret the probability distributions of outcome variables as distributions of future actualized individual outcomes. The multi-model stochastic version proposed by \citet*{Hansen08} is different from Wald's single model deterministic rule in that decisions are not based on the single worst outcome possible, but instead decisions are based on a model, chosen from a set of models in such a way that after society has chosen its statutes and policies, it stochastically leads to the worst outcome for society—it gives the highest probabilities to the worst joint outcomes imaginable, conditional on society doing the best to ensure its members of the highest wellbeing. It is as if society were engaged in a game against nature—the structure of which is unknown but over which each person has her own belief system—where nature chooses that game structure and that mixed strategy within the structure that minimizes society's best response payoffs. So society maximizes societal wellbeing, expecting the worst: as if nature were malevolent.   
+
+In Rawls's moral story a single individual stands in an original position behind a ``veil of ignorance'' and must—not knowing about her own particular abilities, tastes and position within the social order of society—choose society's rules.  Rawls concludes that the lexicographic maximin decision rule—which first considers the worst off members in society and ensures them the highest possible wellbeing and then moves through the list to the second to worst off and so on—is the most just rule and the one most people would choose.  But even if people were to agree with Rawls's sense of justice—which they may or may not—different people reason differently about the mechanisms by which the worst off members in society are produced and people may disagree about how low those worst off peoples' wellbeing might fall, conditional on some decions. The same decisions can have different effects in different minds.  Nothing here requires collectives to abide by Rawlsian justice, but however societal wellbeing is judged, I assume that priority is given to insuring against the worst social outcome. Here, potential \textit{social} outcomes—no matter by what ethics they are judged as long as all members of the collective agree—thus replace potential individual outcomes in Rawls's thought experiment.   
+
+While Habermas developed his democratic principle as one pertaining to moral rightness and ethical authenticity—problems I'm assuming as solved—he recognizes that it should also serve in ``theoretical'' discourse as justification for technical-pragmatic claims about the choice of effective means for achieving a common end \citep{Habermas84}.  This is the context I'm concerned with here—each member of the collective is assumed to abide by the same moral code and all members are assumed to have common needs and wants \footnote{These are strong assumptions that clearly don't hold for some discussions. There are many important discussions, nevertheless, for which these assumptions do hold, or nearly hold.  In situations for which these assumptions don't hold, additional theoretical considerations must be brought to bear—there, it may be productive to further engage with Habermas's work, the majority of which concerns such situations.
+ }. \citet{Arrow63}, for example—in an effort to escape his own impossibility theorem—speculates that ``some values which might give rise to such similarity of social attitudes are the desires for freedom, for national power, and for equality \ldots'' Such cases might seem trivial—Arrow claims in that same passage: ``likeness in individual tastes, by its very nature, leads to likeness in desires for social alternatives.''  However, Arrow quickly acknowledges that ``differences may still arise owing to imperfect knowledge.'' It is not clear what Arrow had in mind when he refered to ``knowledge''—all we have is his passing acknowledgement that differences can be due to something that he called ``knowledge'' and which is different from preferences.  In economics, there is a large literature on individual differences of exposure to information (usually those differences are found to present problems) and thus it might be informational differences that Arrow had in mind.  But I say, there are yet other sources of diversity related to cognition. For example, people or experts might have different causal beliefs, which is something that entire academic departments and policy think tanks are concerned with. Whatever Arrow had in mind, here I consider the diversity of belief systems—beliefs about cause and effect within the system of common interest can vary in important ways, especially if the system is complex. Therefore, there is scope for disagreement about the means for achieving common ends.    
+
+
+When system behavior is simple, in some well defined way, all mental models converge to reasonable representations of the truth, the diversity of models held by the collective's members will be low and all models will be useful. In this situation, any reasonable model selection rule will also select a useful collective belief system from the set that is considered. Robust collective decisions should follow. When the system becomes complex—whether this complexification is endogenously or exogenously determined—I expect the collective's set of cognitive models about the system to diversify. When the truth is complex, people develop different models, they weigh the same evidence in light of different prior experiences and they have good reasons to differ in their opinions. In that condition, again a reasonable model selection rule should select a reasonable belief system that represents the collective.  In particular, if we use some version of the precautionary principle—as do \citet*{Hansen08} for example—and apply this rule to the set of belief systems that is sustained by the individual mental models, increased diversity should lead to more cautious (ambiguity averse) collective decisions. Loosely, in economics a measure of uncertainty about the probability of some event is called the event's ambiguity and the nature and extent of the allowance a decision maker gives to ambiguity gives rise to that decision maker's \textit{ambiguity attitude}—ambiguity aversion is the degree to which a decision maker seeks to make consequences of her decisions robust to ambiguity.
+
+ Thus—under maximin decision rules—when the system behavior becomes complex collectives act as if they were more ambiguity averse as they become more cognitively diverse because they give joint consideration to more types of pitfalls. However, in complex situations social influence or persuasion can reduce cognitive diversity. Reduced diversity, in turn, narrows the boundaries of the set of models that the collective can consider. Additionally, social influence skews all opinions in the directions of the most influencial models, however many of the possible pitfall considerations they happen to contain.  Hence, with conformity, the most reasonable selection rule is likely to render an \textit{impoverished} collective belief system.  
+
+
+The belief system (or model) that the collective will select may be impoverished for two (or more) reasons: 1) Social influence leads to fewer independent evaluations of the real system's workings and the individuals who most strongly influence the collective's model might not be the best thinkers. 2) Persuasive exposure to some model can involve all flavors of strategic manipulation—in cases in which goals diverge—and thus especially if the persuaders are good thinkers, their influences might be strategically biased. Thus, in complex situations where increased caution is warranted—due to high model uncertainty—collective decisions will likely be overconfident and less ambiguity averse than robustness demands, if cognitive diversity is reduced by social pressures. 
+
+\section{Models and Belief Systems.}
+According to \citet{Tenenbaum2011} 
+\begin{quote}
+We [humans] build rich causal models, make strong generalizations, and construct powerful abstractions, whereas the input data are sparse, noisy, and ambiguous—in every way far too limited. A massive mismatch looms between the information coming in through our senses and the ouputs of cognition.
+\end{quote}
+The same authors then go on to argue that Hierarchical Bayesian networks are suitable mathematical representations of human mental structures. As mental structures must, they effectively reduce dimensionality of high dimensional spaces and they make sensible predictions even for unprecedented hypothetical decisions. Some notable dynamic BNs are Hidden Markov Models and Kalman filters which are used in control theory for tracking and predicting linear dynamic systems. \citet{Deventer00} show that Bayesian networks are ideal tools for intelligent process control. In decision theory influence diagrams \citep{Howard84} are used \citep{Jensen02, Zhang98}, which are BNs with additional nodes representing actions and outcomes in terms of wellbeing or utility. Recently, \citet*{Koller03} introduced a new extension called Multi-Agent Influence Diagrams (MAIDS) and yet another extension—Networks of Influence Diagrams (NIDs)—was introduced by \citet*{Gal14}. MAIDS and NIDS are used as structural representations of games with multiple agents, embedded in potentially complex environments, and as such they allow the modeling of human environmental interactions as well as human or environmental reactions to institutional changes.  They thus allow us to overcome Robert Lucas' famous critique regarding the use of naive macro economic regression models which don't account for peoples' reactions to policy changes \citep{Lucas76}: 
+
+\begin{quote}
+Given that the structure of an econometric model consists of optimal decision rules of economic agents, and that optimal decision rules vary systematically with changes in the structure of series relevant to the decision maker, it follows that any change in policy will systematically alter the structure of econometric models
+\end{quote}
+
+Unifying approaches, \citet*{Koller03} and \citet*{Gal14} show how their new representations can be reduced to normal form representations and Bayesian Games respectively, although at analytic costs. Additionally, under certain conditions, Bayesian Networks can be re-expressed as multiple equations regression models and they can be used for likelihood as well as posterior ratio tests. This may be good news for scientists who commonly use these frameworks and who are interested in extending the use of their toolbox to estimate parameters of games with potentially complex structures. For my present purposes I will make use of the more recent representations to show how multiple people who have the same interests, but different models of how some system works, can combine their models to make better reasoned collective decisions.      
+
+
+ With these new tools, I can address the robustness of collective decisions with precautionary principles for robust control\footnote{Maximin rules, as these robust decision rules are called, are often very conservative and other rules are more sensible in situations in which potential losses are relatively small, or where deviating from these stringent principles is likely profitable.
+ }—of the form proposed by  \citet*{Hansen08}—with the added advantage that the relevant model space for decisions is determined naturally by the beliefs of the individuals in a collective. \citet*{Hansen08} suggest that robust decisions require a focus on the worst case scenarios. This is equivalent to treating nature or chance as though it were a malevolent opponant in a game, with the only goal to make us—the human decision makers—miserable.  While nature is certainly not malevolent, in many situations—for example when considering building nuclear power plants near fault lines—it makes sense to be extreemly cautious. Thus, \citet*{Hansen08} offer the fable of Nature as evil opponant for situations where extreem caution is warranted. Once we know the arguments (models) a collective has reasons to consider—the problem I focus on here—there are many alternative ways of trading off risks against rewards—stochastic dominance of all orders—and they can all be plugged in to this approach. But here, I'm holding constant the priority to ensure the best minimum outcomes and I'm keeping both eyes on the set of models that a collective should consult before deciding on actions. We need to know what to consider, before we can act intelligently.            
+
+Each of the collective's exogenously given individual belief systems—itself a mental representation of the real world system of interest (including social and economic interactions)—is represented as a type of (possibly Hierarchical) Bayesian Network or MAID. Bayesian Networks—henceforth BNs—are used to represent the believed relations between several random variables in a directed graph. MAIDS additionally include decision and utility variables. Both BNs and MAIDS encode joint distributions over the set of relevant variables as sets of probabilistic causal joint-hypotheses, which are intuitive for humans \citep{Tenenbaum2011}. 
+
+Formally, consider a set of random variables, $\mathcal{X}_n=\{X_1, \ldots, X_n\}$, where each $X_i$, takes on values in some finite domain $dom(X_i)$ and where all variables, togeher with their possible values, define the cross product space: $dom(\mathcal{X}_n)=\times_{i=1}^n dom(X_i)$. A BN is a factorization of a distribution over the cross product space $dom(\mathcal{X}_n)$ —examples will follow shortly.  
+
+\begin{definition}
+A Bayesian Network $\mathcal{B}$ over a set of $n$ variables $\mathcal{X}_n$ is a pair $(\mathcal{G}, Pr)$, where $\mathcal{G}$ is a directed acyclic graph with $n$ nodes—labeled $X_1,\ldots, X_n$—and where $Pr$ is a mapping that associates with each node (variable) $X_i \in \mathcal{X}_n$ a conditional probability distribution (CPD): $Pr(X_i|Pa(X_i))$. The \textit{parents} $Pa(X)$ of node $X$ in graph $\mathcal{G}$ are those nodes $\mathbf{Y}$ such that for all $Y \in \mathbf{Y}$ there is a directed edge from $Y$ to $X$. The CPD specifies a probability distribution $Pr(X_i |\mathbf{pa})$ over all possible values of $X_i$ and for each instantiation $\mathbf{pa} \in dom(Pa(X_i))$.    
+\end{definition}
+
+\subsection{Semantics}
+\begin{definition}\label{df:chain-rule}
+The \textit{Chain Rule for Bayesian Networks} ensures that any BN $\mathcal{B}=\{\mathcal{G}, Pr\}$ over $X_1, \ldots, X_n$, defines a factorization of a joint distribution, like so
+$$P(X_1, \ldots, X_n)=\prod_{i=1}^n Pr(X_i | Pa(X_i)).$$ 
+\end{definition}
+
+The joint distribution $P(X_1, \ldots, X_n)$ thus obtained is called the \textit{semantics} of the BN, $\mathcal{B}$, and the CPDs of the nodes— $Pr(X_i | Pa(X_i)$ —are called the \textit{local probability models}. 
+
+\begin{figure}
+        \centering
+        \begin{subfigure}[b]{0.6\textwidth}
+                \includegraphics[width=\textwidth]{Alarm.pdf}
+                
+        \end{subfigure}%
+       \caption{The Alarm Graph: The grey boxes contain the CPDs or local probability models.}
+       \label{fig:alarm}
+\end{figure}
+
+\begin{myexamp}{Reasoning about the sounding of an alarm}{alarm}
+An illustrative example of a BN—due to \citet*{Koller03}—is depicted in Figure \ref{fig:alarm}. Imagine that you find yourself in a house with an alarm system. If the alarm sounds, you have reasons to believe that this annoyance may either be caused by someone breaking in, or by a minor earth quake. The sound of the alarm, in turn, might alert the neighbors, which may cause them to call.  Lastly, if there is an earthquake, there is a chance that the radio station will report it. There are thus five relevant variables, each with a binary domain \{0, 1\}. The alarm, $A$, sounds (1) or not (0). The burglary, $B$, occurs (1) or not (0). The earth, $E$, quakes (1) or not (0). The neighbors' call, $C$, is made (1) or not (0). Lastly, the radio station, $R$, reports an earth quake (1) or not (0). The cross product space, then, has $32 (=2^5)$ entries and each must be assigned a probability. With $N$ binary variables, the total number of states is $2^N$, which makes representing beliefs as mappings from states to probabilities impractical. But a plausible model over our 5 variables expressed in the form of a Bayesian Network (BN) has only 20 parameters.    
+\end{myexamp}
+
+The chain rule for BNs allows the opinion holder with BN $\mathcal{B}$ to produce a belief (probability) for every event, $x=\{X_1=x_1,\ldots, X_n=x_n\} \in \mathcal{X}$. With the belief system of Example \ref{th:alarm}, we might ask what is the probability of a burglary ($B=1$) with the alarm sounding ($A=1$) and neighbor calling ($C=1$), while there is no earthquake ($E=0$) and no radio report ($R=0$). The answer can be read from the tables in Figure \ref{fig:alarm}:
+
+$$Pr(B=1, A=1, C=1, E=0, R=0)$$
+$$= Pr(B=1)Pr(E=0)Pr(C=1 | A=1)Pr(R=0 | E=0)Pr(A=1 | B=1, E=0)$$
+$$= 0.01*0.995*0.7*0.999*0.8\approx0.006.$$        
+\subsection{BNs and Simultaneous Equations Regression Models}
+For continuous cases, the local probability models—the dependecies between nodes and their parents—can, under certain conditions, be defined as the conditional probability densities associated with a regression model of the form $X_i= \alpha_i + \boldsymbol{\beta}_iPa(X_i) + \epsilon_i$, where $\alpha_i$ is some constant, $\boldsymbol{\beta}_i$ is a vector of effect parameters—one for each parent of $X_i$ —and $\epsilon_i$ is a disturbance term, uncorrelated with anything salient. This leads to Simultaneous Equations Models (SEMs) commonly used in economics where the density of node (dependent variable) $X_i$, conditional on its parents (independent variables) is written as
+$$f_{X_i}(X_i | Pa(X_i))=\frac{1}{\sigma_i\sqrt{2\pi}}e^{-\frac{x_i - \alpha_i - \boldsymbol{\beta}_iPa(X_i)}{2\sigma_i^2}}.$$
+
+This is the special case for which local probability models are Gaussian with linear systematic dependencies and with homogeneity of variances (i.e. $\sigma_{i | Pa(X_i)}=\sigma_i$ for all $i$ and for each instantiation $\mathbf{pa} \in dom(Pa(X_i))$. Of course, the last assumption is merely meant to simplify my illustration of these concepts, it does not hold in general and it is easy to relax. In this—the unrelaxed—case, we arrive at the joint density
+ 
+$$f_\mathcal{X} (X_1,\ldots,X_n)=\left(\frac{1}{\sqrt{2\pi}}\right)^n\prod_{i=1}^n \sigma_i^{-1}e^{-\frac{x_i - \alpha_i - \boldsymbol{\beta}_iPa(X_i)}{2\sigma_i^2}}.$$
+
+If we are interested in the so-called inverse problem, we can substitute the terms $Pa(X_i)$ and $X_i$ with observed instantiations ($\mathbf{pa}(x_i)$ and $x_i$ respectively). Taking the natural log, the resulting expression is proportional to the usual log-likelihood function of the parameters, given the data 
+$$\ln \mathcal{L}(\boldsymbol{\tilde{\beta}}, \boldsymbol{\tilde{\alpha}}, \boldsymbol{\tilde{\sigma}} | X_1=x_1, \ldots, X_n=x_n) \propto \mathcal{K} \sum_{i=1}^n -\ln \tilde{\sigma_i} -\frac{x_i - \tilde{\alpha_i} - \boldsymbol{\tilde{\beta}_i}\mathbf{pa}(x_i)}{2\tilde{\sigma_i}^2},$$
+where $\mathcal{K}$ is some constant, $\mathbf{pa}(x_i)$ is the observed instantiation of $X_i\text{s}$ parents $Pa(X_i)$ and $x_i$ is the observed instantiation of $X_i$.   
+Maximizing the log-likelihood function by apropriately choosing parameter values, estimates the most likely parameters $\boldsymbol{\alpha^{*}}, \boldsymbol{\beta^{*}}$, $\boldsymbol{\sigma^{*}}$, given that we have observed what we have \textit{and} given the postulated causal structure. For this very special case, maximizing the likelihood will give identical parameter estimates as would running $n$ OLS regressions—one for each local probability model \citep{King1998}.    
+
+\begin{myexamp}{Supply and Demand for Coffee}{supply-demand}
+The classic example of SEMs in economics is a model with supply and demand equations for some commodity—for example coffee (see Figure \ref{fig:demand-supply} for the causal structure that this model implies):
+\begin{equation}
+q_S=\alpha_Sp + \beta_WW +\epsilon_1,
+\label{eq:supply}
+\end{equation}
+
+\begin{equation}
+q_D=\alpha_Dp + \beta_II +\epsilon_2,
+\label{eq:demand}
+\end{equation}
+
+where $q_s$, $q_d$ respectively denote the quantities supplied and demanded, $p$ denotes the price of coffee, $W$ denotes some weather related quantity and $I$ denotes some measure over the income distribution of buyers. According to this theory, both $W$ and $I$ are linearly related to the supply and demand of coffee respectively. The $\alpha\text{s}$ and $\beta\text{s}$ are the effect parameters and the $\epsilon\text{s}$ are disturbance terms, uncorrelated with anything in the model.    
+\end{myexamp}
+
+\begin{figure}
+        \centering
+        \begin{subfigure}[b]{0.7\textwidth}
+                \includegraphics[width=\textwidth]{DemandSupply.pdf}
+                
+        \end{subfigure}%
+       \caption{The causal structure of the classical supply and demand equations in economics.}
+       \label{fig:demand-supply}
+\end{figure}
+
+  
+More generally \citep{King1998}, for each node (variable) $X_i$ in some BN $\mathcal{B}$, we can write the local probability model of $X_i$ in terms of some stochastic componant 
+\begin{equation}
+X_i \sim f_{X_i}(X_i | \theta_i, \phi_i)$$
+\label{eq:stochastic}
+\end{equation}
+and some systematic componant
+\begin{equation}
+\theta_i=g_i(Pa(X_i), \boldsymbol{\beta}_i).
+\label{eq:system}
+\end{equation}
+Here, $f_{X_i}(X_i |\theta_i,\phi_i)$ is \textit{any} CPD or conditional density function, conditional on systematic componant $\theta_i$ and auxiliary parameter vector $\phi_i$. The systematic componant $\theta_i$ is defined as any deterministic function $g_i(\cdot, \cdot)$ of the node's parents $Pa(X_i)$ and a parameter vector $\boldsymbol{\beta}_i$. Equation \ref{eq:stochastic} represents the $i\text{s}$ factor of the semantics associated with a BN and Equation \ref{eq:system} represents the $i\text{s}$ equation—robbed of its disturbance term—in a generalized multiple regression framework. In general—for non Gaussian non-linear cases—it is un-natural to think in terms of disturbance terms for modeling stochastic systems and hence Equations \ref{eq:stochastic} and \ref{eq:system} are used—following \citet*{King1998}—to express beliefs about the chance (\ref{eq:stochastic}) and systematic (\ref{eq:system}) variation of each node (variable) in the model—these two equations define the local probability model for node $i$. 
+
+\subsection{Independence}
+
+Bayesian Networks, MAIDS and NIDs look and feel intuitive as they are maps of cognitive representations—internal to us all—of structure in causal systems, but it follows from the definition of the joint distribution using the chain-rule (Definition \ref{df:chain-rule}) that they also correspond to precise statistical independence statements.  This relation between the picture of a causal graph—which is intuitive to anyone—and the precise claims about conditional statistical independence relations implied by the picture is central to any argument about cognitive processes that uses BNs, MAIDS or NIDs, or—as in my case—collections of such objects.  Hence, here I review the relationships between the structure of the graph $\mathcal{G}$ and the independencies in its semantics $Pr(\mathcal{G})$, which are guaranteed to hold for any non-trivial parameterization of the graph. I begin with a definition of the most basic concept of conditional independence.
+
+\begin{definition}\label{de:conditional-independence}
+Let P denote some joint-distribution over the set of variables $\mathcal{X}$. Further, let $\mathbf{X}$, $\mathbf{Y}$ and $\mathbf{Z}$ denote three pairwise disjoint subsets of $\mathcal{X}$. If for any $z\in dom(\mathbf{Z})$ with $P(z) > 0$ and for any $x\in dom(\mathbf{X})$, $y\in dom(\mathbf{Y})$ it is the case that
+
+$$P(x|y, z) =P(x | z),$$
+
+or equivalently 
+
+$$P(y|x, z) =P(y | z),$$
+
+then we say that $\mathbf{X}$ and $\mathbf{Y}$ are \textit{conditionally independent} in $P$, given $\mathbf{Z}$ or that $\mathbf{X}$ is \textit{conditionally independent of} $\mathbf{Y}$ given $\mathbf{Z}$ in $P$. These conditional independencies also imply that
+
+$$P(x, y | z) = P(x|z)\cdot P(y|z).$$   
+\end{definition}
+   
+As noted in \citet{Koller03}, conditional independence thus defined is strong—it implies conditional independence for every value assignment to all variables involved. As a concept, conditional independence is distinct from marginal independence in that if $x$ and $y$ are marginally independent, they may or may not also be conditionally independent and vice versa. In Example \ref{th:alarm}, the phone call $C$ and the burglary $B$ are conditionally independent in that once we observe the sounding of the alarm, $A$, which is the only signal the neighbor observes by assumption (in our model depicted in Figure \ref{fig:alarm}), we can calculate the probability of the phone call without any additional knowledge of the burglary. Likewise, once we observe $A$ we can calculate the likelihood of a burglary and (given the belief system depicted in Figure \ref{fig:alarm}) the phone call gives us no extra information that would be useful for that task.  However, if we don't know whether the alarm sounded, observing a burglary increases our expectations of the neighbor's call—the theory (Figure \ref{fig:alarm}) tells us that $C$ and $B$ are \textit{marginally dependent} and \textit{conditionally independent}. The burglary $B$ and the earthquake $E$ in Example \ref{th:alarm}, however are presumed to be marginally independent in the BN depicted in Figure \ref{fig:alarm}. Yet, upon observing the sounding of the alarm, $A$, knowledge of an earthquake $E$ would decrease our suspicion about a burglary $B$ and thus $E$ and $B$ are conditionally dependent.  
+ 
+\begin{definition}
+Let $\mathbf{Y}$ denote some set of nodes and let $X$ and $Z$ denote some two single nodes. We say that node $Z$ is \textit{requisite} for $P(X | \mathbf{Y})$ in graph structure $\mathcal{G}$, if changing the $CPD$ of $Z$ affects the answer to the query $P(X | \mathbf{Y})$. Formally, let $\mathcal{B}_1$ and $\mathcal{B}_2$ be two networks with identical structure $\mathcal{G}$ and with identical $CPD$s, everywhere except at node $Z$. Node $Z$ has a \textit{requisite} $CPD$ for answering the query $P(X | \mathbf{Y})$ if $P(X | \mathbf{Y})_{\mathcal{B}_1} \not= $P(X | \mathbf{Y})_{\mathcal{B}_2}$$.    
+\end{definition}
+
+\section{Belief Systems and Games}
+
+\begin{figure}
+        \centering
+        \begin{subfigure}[b]{0.7\textwidth}
+                \includegraphics[width=\textwidth]{FishHarvest.pdf}
+                
+        \end{subfigure}%
+       \caption{The Fisherman and the Farmer}
+       \label{fig:fish-harvest}
+\end{figure}
+ 
+\section{Dynamics of Belief Systems}
+\subsection{Surprise}
+Bayesian updating, unlike Maximum Likelihood, assumes parameters to be themselves drawn from distributions and the measurements of the system (data) are used to learn what these distributions might be. In addition to learning about parameter distributions from data, holding constant some model structure, when I use it in conjunction with BNs, Bayes's Updating mechanism allows me to combine information—old and new—to evaluate whole theoretical structures against each other. Such comparisons are made via \textit{posterior odds ratios}, $\mathcal{O}(\cdot, \cdot)$, which \citet*{Griffith08} have given the special name ``causal support'' in order to emphasize that \textit{causal structures} are being compared.  
+\begin{equation}\label{eq:odds}
+\mathcal{O}_x(\mathcal{B}_1, \mathcal{B}_2)=\log\frac{P_x(\mathcal{B}_1 |X=x)}{P_x(\mathcal{B}_2 | X=x)},
+\end{equation}
+where $P_x(\mathcal{B}_1)$ and $P_x(\mathcal{B}_2)$ are the probabilities of joint outcome $x$ under model $\mathcal{B}_1$ and model $\mathcal{B}_2$ respectively. Supposing we have some measurements $x$ of the system we care about, we can judge model $\mathcal{B}_1$ to be a better explanation of having made the measurements $x$ than $\mathcal{B}_2$, if $\mathcal{O}_x(\mathcal{B}_1, \mathcal{B}_2) > 1$. Else, if $\mathcal{O}_x(\mathcal{B}_1, \mathcal{B}_2) <1$ we make the judgement that $\mathcal{B}_2$ is a better explanation. If $\mathcal{O}_x(\mathcal{B}_1, \mathcal{B}_2) =1$ we say that both models are equally good—or bad—at explaning the measurements we have obtained.  However, models that better fit hitherto seen evidence do not necessarily make better models—models that foresee some rare dangers that well fitting models don't are better in situations where such dangers do occur—if rarely—and where they have serious consequences.     
+
+Surprise can be quantified, using the ideas inherant to Bayesian Updating, in the form of a distance measure between prior and posterior joint distributions and if I compare the same persons' models over time I can quantify learning. 
+
+\begin{definition}[Single Model Surprise \citep*{Baldi2010}]
+I define the amount of \textit{Surprise} one bit of data $D$ has on a Bayesian Network, $\mathcal{B}$ as
+$$KL(\mathcal{B}, \mathcal{B} |D)=\int_{\mathcal{X}} P_X(\mathcal{B})\log\frac{P_X(\mathcal{B})}{P_X(\mathcal{B}|D)}dX,$$
+where $KL(\cdot, \cdot)$ is called the relative entropy or Kullback-Lieber Divergence in Information Theory. It is an asymmetric quantification of the effect that the one bit of data, $D$ had on the model $\mathcal{B}$.   
+\end{definition}
+
+This defintion of single model surprise is due to \citet*{Baldi2010} who are not naive to alternative symmetric distance measures for pairs of distributions—such as the Jensen Shannon Divergence from which I derive my diversity measure—but they claim that intuition about the meaning of surprise dictates asymmetry: ``A broad prior distribution followed by a narrow posterior distribution corresponds to a reduction in uncertainty, while a narrow prior distribution followed by a broad posterior distribution corresponds to an increase in uncertainty, and both lead to different subjective experiences'' \citep*{Baldi2010}. 
+\subsection{Learning}  
+If in addition to observing expressions of a person's structural beliefs over time, I also know what that given person has observed while making repeated causal claims, I can compare that person's expressed learning—changes in a person's publicly presented model, in light of a stream of measurements—against the benchmark of rationality—Bayesian Updating.  Nothing in the definition of surprise, however, depends on people being or acting as Bayesian updaters. Note that the definition of rationality as Bayesian Updating—a quite common one—does not speak to the diversity of \textit{prior} belief systems. Rationality thus defined pertains only to learning in the face of evidence and not to initial belief systems.  Thus, if a certain measure of diversity $\mathcal{D}$ —over the set of individual models—persists for periods $1$ through $\mathcal{T}$ even with repeated Bayesian updating, then I say that $\mathcal{D}$ is \textit{rationalized} for a period of length $\mathcal{T}$, given the data steam $d_1,\ldots, d_{\mathcal{T}}$.  Such claims can be assessed by mechanically updating in each period $t$ all period $t-1$ models using the Bayesian Algorithm and period $t\text{s}$ observations $d_t$.               
+
+\subsection{Social Influence}
+
+
+
+
+
+
+\section{Social Cognition}
+ 
+The context that I consider is a collective of $N$ experts (or amature thinkers) who make estimates of the likelihood of the onset of some set of conceivable crises, $C_{t+1}$, for period $t+1$ contingent on a set of period $t$ decision variables $D_t$ and nature variables $V_t$.  The causal arrows between the considered variables $\bigcup D_t \bigcup V_t \bigcup C_{t+1}$ can be different in different models and it is about those differences that I theorize. In particular, my theory will say some things about the likelihood—as a function of diversity—of society commiting a type I error, falsely predicting a crisis. I define a collective type I error as the error that occurs when a collectively agreed upon model predicts a crisis when this prediction is not warranted, conditional on the proposed policies and circumstances. Likewise, I will account for the likelihood of society making a false negative prediction (type II error) as a function of diversity. A collective type II error occurs when the collective's model fails to predict a crisis jointly caused by nature and decisions that it should predict. I sidestep the question of ``truth'' by suggesting that the thinkers in the collective take turns ``playing the truth.'' That is, all players agree to act—for a moment—as if player $i\text{s}$ model embodied the perfect representation of the true process that produces the data of our experience and then we check what that would do to all other models in the collective—how would they change on average if they were exposed to data from player $i\text{s}$ model.  That is done in turn with the models of all players.  
+
+So, on the extreme micro level, you could think of this as the model used by society including false causal arrows or not including some causal arrows that are relevant.  So then, there are two cases: one with social contagion and one without social contagion of causal beliefs.  First the case without social contagion: 
+
+In that case, each true causal arrow will be in some person's belief system with probability Pc.  Conditional on that, what is the probability that all relevant causal arrows are included in the social belief system, given that we have N models with diversity D?  That is the question.  But in any case, this probability will be a function of diversity.  Also, note that the more complex the system is (the more true arrows there are) the more diverse the models should be, given this rule (individuals detect true arrows with probability Pc).  I have to prove this, but it seems trivial.  Next, we have to worry about the possibility of there being a wrong causal arrow in the social belief system.  Without social influence, we see that a given wrong arrow will be in someone's model with probability epsilon (small because each person is assumed to individually make fewer mistakes about spurious arrows than about arrows that do exist).  What then is the probability that a given wrong arrow makes it into the social belief system, given the number of models N and the diversity D?  Clearly, this too is a function of diversity! Also, the converse is true: diversity is a function of possible wrong arrows, which means a function of the number of nodes.  Now--after linking missed true arrows and false arrows with how this affects prediction--we have a trade-of between predicting too many crises and not predicting those that we should and diversity as well as complexity play important roles.  Additionally, we talked about the detection and special attention that we might want to dedicate to ``out of the box models'' which are models lying entirely outside of the convex hull of all other models; meaning the support is not overlapping with the union of all other models.  We might not want to include those models, but sometimes we might want to take them especially serious (not clear whether the model bearer is a genius or insane). 
+
+Social influence case: ``out of the box models'' are more likely to be genius in this case; in the independent case, they are more likely to be crazy. Model.  Pci is the independent probability of someone guessing a correct arrow, Pcd(K) the probability of copying someone else's correct belief, given that there are K belief systems from which a person can receive signals. epsilon$_i$ is the independent probability of a belief in a false causal arrow, epsilon$_d$(K) is the probability of believing in a false causal arrow, dependent on someone else having this belief, which is recursively conditional on the K neighbors' belief systems.  A little bit more complicated, but this should show that diversity can decrease in K and in epsilon$_d$(.). Also, it should depend critically on the social structure (the network of influence).   
+
+Anyway, this has been a fruitful discussion overall. 
+
+\bibliographystyle{plainnat}
+\bibliography{RobustCollectives}
+
+
+
+\end{document}

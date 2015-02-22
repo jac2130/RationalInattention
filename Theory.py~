@@ -1,0 +1,4 @@
+from random import randint
+
+K=8
+r=3
