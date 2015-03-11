@@ -17,6 +17,7 @@
 \tolerance=1000
 \usepackage{hyperref}
 \usepackage{amsmath}
+\usepackage{dsfont}
 \usepackage[round]{natbib}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -70,9 +71,42 @@ urlcolor=black
 
 
 \section{Introduction}
+ Michael Woodford proposes ``a theory of valuation errors under the hypothesis that perceptions are as accurate as possible on average, given the statistical properties of the environment to which they are adapted, subject to a limit on processing capacity'' \citep{Woodford12}. Woodford's theory is an important modification of Sim's \citeyearpar{Sims98, Sims03, Sims11} ``rational inattention'' hypothesis, atuned to conform with psychophysical and neurobiological evidence regarding visual perception, withought loss of simplicity. A natural substitution was made, exchanging one important information theoretic measure for another, in a way that the theory comes to more accurately represent the cognitive situation and thus improve its predictions. The mutual information was Sims's measure. It is more general than a correlation coefficient in expressing the statistical relationship between two variables; in our case: a person's cognitive representation, denoted $r$, of what the person saw, denoted $X$. Channel Capacity -- Woodford's measure -- is given by the maximum of the mutual information between the input and output of the channel -- the senses through which inputs are converted to perceptions -- where the maximization (the absolute cognitive limit) is with respect to the input distribution. The capacity, denoted $C$, is simply the logarithm of the number of distinguishable input signals\citep{CoverThomas}. We use the base $2$ logarithm, a tradition that enables us to measure the capacity in bits and thus a quantity that might be of direct interest, the number of input signals a person can noiselessly distinguish between, is $2^C$.  
 
+\section{Questions}
+
+If we have Bayes Nets as models, they must be related to Mutual Entropies as their parameter estimates are sufficient statistics, given a desired observational acuracy level.  
+
+Things to calculate for individuals:
+
+is surprise per period. This can then be averaged. 
+ 
 \section{Models and Belief Systems.}
+In each period, each of $K$ variables can take on two values, high (``H'') and low (``L'').  The way in which one may think about this assumption is to pose that in truth each physical variable underlying one's beliefs may be continuous or multi-valued, but that the information is first coarse-grained by some media report or by some politician -- or by the observer herself -- as a first step to lower the cognitive burden. The information, then, is encoded as signals from the world in a finite alphabet of symbols taking the form of $K$ tuples (Interest Rate = ``H'', Exports = ``Low'', Unemployment = ``H''). The number of possible $K$ tuples of this form is $2^K$. We can then say that the system, or some intermediary reporter acts as a source, providing a stream of symbols selected from a finite alphabet $A=a_1, \ldots, a_{2^K}$, which are then further encoded by a decision maker's mind before using those encodings to make decisions. 
 
+Suppose we have -- or construct -- a system of two variables $X$ and $Y$, with the following stochastic properties:
+$X \sim Bernoulli(p)$ (``H'' with probability $p$ and ``L'' with probability $1-p$) and $Y$ is conditional on $X$ in the following way:
+\begin{equation}
+P(Y="H"|X)=\mathds{1}_H(X)*q,
+\end{equation}    
+where $\mathds{1}_H(X)=1$ if and only if $X="H"$. We may then think of $q$ as the causal effect $X$ exerts on $Y$ in the sense that if $X="H"$ is \textit{stochastically causes} $Y$ to also take on the value ``H'' with probability $q$, otherwise, $Y$ will take on the value ``L'' with certainty.  
+
+
+\section{The Setup}
+Let $\Delta q(r) = q^{Best}(r)-q^{'}(r)$, where $q^{Best}(r)$ is the number of bets a person would demand when the price is $r$ with counter factually unconstrained processing capacity and $q^{'}(r)$ is the quantity the same person demands under the same price regime $r$ but with some other chosen belief system that is in some way flawed due to the fact that attention is a scarce resource and that a perfect belief system does not come for free.  Then the loss function is as follows:    
+\begin{equation}
+\sum_{X}P_{Best}(X)\int_r P(r)(\omega-\Delta q(r)*r + \Delta q(r)\mathds{1}_H(X_k))dr.
+\end{equation}
+The objective then, is to minimize the loss function subject to the constraints
+\begin{equation}
+\frac{\omega}{r} > q > -s
+\end{equation}
+and
+\begin{equation}
+C = \max_{\pi}I(P_X; \pi)<K,
+\end{equation}
+where $\mathds{1}_H(X_k) =\begin{cases} 1 &\mbox{if } X_k = H \\
+0 & \mbox{if } X_k = L \end{cases}$, $C$ is the channel capacity and $P(r)$ is the probability that the price of a bet is $r$. 
 \section{Priors}
 
 Suppose that at any period, $t$, it is known to a decision maker that the system relevant to her decision can be in one of $K$ potential states.  Further, suppose that at period $t$, $K - r_t$ of those have been experienced at least once, so that $r_t$ of them have never before been experienced. What prior is a person to optimally place on a never before experienced stimulus? If $r_t=0$, the optimal prior seems trivial: all states have been experienced at least once and it seems that the optimal model should use simple induction. Let $S=s_1, \ldots, s_K$ denote the set of possible states and $F_t=f_{1, t-1}, \ldots, f_{K, t-1}$ the associated observed frequencies of these states before time $t$. Then if $r_t=0$, the optimal prior probabilities of the $K$ states at time $t$ seem to be $\left\{\pi_{i, t}^{*}\right\}=\left\{\frac{f_{i, t-1}}{\sum_i f_{i, t-1}}\right\}=\left\{\frac{f_{i, t-1}}{t-1}\right\}$. However, induction is not optimal if one wants to avoid expressing complete certainty about the impossibility of not yet experienced events. 
@@ -85,7 +119,7 @@ The fix is to start in period $0$, before any sensory experience begins. If an i
 Surely, this quantity converges to the right limit (there is no bias) and it does so at the highest rate possible, given the information inherent in the data sequence up to period $t$. When $t$ tends to infinity the probability of a state occurring that has up to now not been observed tends asymptotically to zero ($\lim_{t\rightarrow\infty}\frac{1}{K*t}=0$).  In the beginning we are told that swans can be either black or white. We start with an open mind and attribute equal probability to both, black and white swans. The longer we fail to make a sighting of a black swan, while continuously sighting white ones, the less likely we deem the creature's existence, but we never rule it out completely (only asymptotically). 
 \\
 
-To express this learning process in a way that is ammenable to Bayesian learning, 
+To express this learning process in a way that is ammenable to Bayesian learning,      
 \bibliographystyle{plainnat}
 \bibliography{RobustCollectives}
 

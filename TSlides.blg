@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: TSlides.aux
+The style file: apalike.bst
+Illegal, another \bibstyle command---line 88 of file TSlides.aux
+ : \bibstyle
+ :          {plainnat}
+I'm skipping whatever remains of this command
+Database file #1: RobustCollectives.bib
+Warning--entry type for "Woodford12" isn't style-file defined
+--line 445 of file RobustCollectives.bib
+Warning--can't use both author and editor fields in Griffith08
+Warning--can't use both author and editor fields in Sims11
+Warning--there's a number but no volume in Verma90
+You've used 9 entries,
+            1935 wiz_defined-function locations,
+            535 strings with 4968 characters,
+and the built_in function-call counts, 3070 in all, are:
+= -- 293
+> -- 108
+< -- 10
++ -- 34
+- -- 34
+* -- 250
+:= -- 553
+add.period$ -- 28
+call.type$ -- 9
+change.case$ -- 59
+chr.to.int$ -- 9
+cite$ -- 12
+duplicate$ -- 124
+empty$ -- 223
+format.name$ -- 49
+if$ -- 590
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 11
+newline$ -- 49
+num.names$ -- 27
+pop$ -- 57
+preamble$ -- 1
+purify$ -- 62
+quote$ -- 0
+skip$ -- 90
+stack$ -- 0
+substring$ -- 179
+swap$ -- 13
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 48
+warning$ -- 3
+while$ -- 23
+width$ -- 0
+write$ -- 118
+(There was 1 error message)

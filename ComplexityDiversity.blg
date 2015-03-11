@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ComplexityDiversity.aux
+The style file: plainnat.bst
+Database file #1: RobustCollectives.bib
+Warning--entry type for "Woodford12" isn't style-file defined
+--line 435 of file RobustCollectives.bib
+Warning--can't use both author and editor fields in Sims11
+You've used 4 entries,
+            2773 wiz_defined-function locations,
+            619 strings with 5370 characters,
+and the built_in function-call counts, 1268 in all, are:
+= -- 105
+> -- 40
+< -- 6
++ -- 16
+- -- 12
+* -- 71
+:= -- 207
+add.period$ -- 13
+call.type$ -- 4
+change.case$ -- 15
+chr.to.int$ -- 4
+cite$ -- 9
+duplicate$ -- 75
+empty$ -- 129
+format.name$ -- 16
+if$ -- 261
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 4
+newline$ -- 29
+num.names$ -- 16
+pop$ -- 42
+preamble$ -- 1
+purify$ -- 12
+quote$ -- 0
+skip$ -- 51
+stack$ -- 0
+substring$ -- 8
+swap$ -- 7
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 39
+warning$ -- 1
+while$ -- 12
+width$ -- 0
+write$ -- 59
+(There were 2 warnings)

@@ -1,0 +1,51 @@
+\begin{thebibliography}{}
+
+\bibitem[Cover and Thomas, 2006]{CoverThomas}
+Cover, T.~M. and Thomas, J.~A. (2006).
+\newblock {\em Elements of Information Theory}.
+\newblock John Wiley \& Sons, New York.
+
+\bibitem[Griffiths et~al., 2008]{Griffith08}
+Griffiths, T.~L., Kemp, C., and Tenenbaum, J. (2008).
+\newblock {\em Bayesian models of cognition.}, chapter in Cambridge Handbook of
+  Computational Cognitive Modeling.
+\newblock Cambridge University Press.
+
+\bibitem[Koller and Milch, 2003]{Koller03}
+Koller, D. and Milch, B. (2003).
+\newblock Multi-agent influence diagrams for representing and solving games.
+\newblock {\em Games and Economic Behavior}, 45(1):181--221.
+\newblock Full version of paper in IJCAI '03.
+
+\bibitem[Sims, 1998]{Sims98}
+Sims, C.~A. (1998).
+\newblock Stickiness.
+\newblock {\em Carnegie-Rochester Conference Series on Public Policy}.
+
+\bibitem[Sims, 2003]{Sims03}
+Sims, C.~A. (2003).
+\newblock Implications of rational inattention.
+\newblock {\em Journal of Monetary Economics}.
+
+\bibitem[Sims, 2011]{Sims11}
+Sims, C.~A. (2011).
+\newblock {\em Handbook of Monetary Economics}, volume~3A, chapter Rational
+  Inattention and Monetary Economics.
+\newblock Amsterdam: Elsevier.
+
+\bibitem[Tenenbaum et~al., 2011]{Tenenbaum2011}
+Tenenbaum, J.~B., Kemp, C., Griffiths, T.~L., and Goodman, N.~D. (2011).
+\newblock {How to Grow a Mind: Statistics, Structure, and Abstraction}.
+\newblock {\em Science}, 331(6022):1279--1285.
+
+\bibitem[Verma and Pearl, 1990]{Verma90}
+Verma, T. and Pearl, J. (1990).
+\newblock Causal networks: Semantics and expressiveness.
+\newblock {\em Uncertainty in Artificial Intelligence}, (4):69--79.
+
+\bibitem[Woodford, 2012]{Woodford12}
+Woodford, M. (2012).
+\newblock Inattentive valuation and reference-dependent choice.
+\newblock website.
+
+\end{thebibliography}

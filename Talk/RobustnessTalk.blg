@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: RobustnessTalk.aux
+The style file: apalike.bst
+Database file #1: ResearchStatement.bib
+Warning--entry type for "Woodford12" isn't style-file defined
+--line 2618 of file ResearchStatement.bib
+You've used 3 entries,
+            1935 wiz_defined-function locations,
+            489 strings with 4033 characters,
+and the built_in function-call counts, 848 in all, are:
+= -- 81
+> -- 27
+< -- 3
++ -- 8
+- -- 8
+* -- 55
+:= -- 165
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 18
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 37
+empty$ -- 59
+format.name$ -- 13
+if$ -- 159
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 9
+pop$ -- 17
+preamble$ -- 1
+purify$ -- 19
+quote$ -- 0
+skip$ -- 31
+stack$ -- 0
+substring$ -- 36
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 16
+warning$ -- 0
+while$ -- 6
+width$ -- 0
+write$ -- 38
+(There was 1 warning)

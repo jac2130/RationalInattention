@@ -1,0 +1,31 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Sims(1998)]{Sims98}
+Christopher~A. Sims.
+\newblock Stickiness.
+\newblock \emph{Carnegie-Rochester Conference Series on Public Policy}, 1998.
+
+\bibitem[Sims(2003)]{Sims03}
+Christopher~A. Sims.
+\newblock Implications of rational inattention.
+\newblock \emph{Journal of Monetary Economics}, 2003.
+
+\bibitem[Sims(2011)]{Sims11}
+Christopher~A Sims.
+\newblock \emph{Handbook of Monetary Economics}, volume~3A, chapter Rational
+  Inattention and Monetary Economics.
+\newblock Amsterdam: Elsevier, 2011.
+
+\bibitem[Woodford(2012)]{Woodford12}
+Michael Woodford.
+\newblock Inattentive valuation and reference-dependent choice.
+\newblock website, 2012.
+\newblock URL
+  \url{http://www.columbia.edu/~mw2230/InattentiveValue%20Harvard%20Seminar.pdf}.
+
+\end{thebibliography}

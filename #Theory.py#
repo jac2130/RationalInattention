@@ -73,4 +73,3 @@ def makeOneCauseMI(p=0.5, q=0.5):
     py=joint.Marginal(1)
     return px, py, joint
 
-#Perhaps symmetry of the transition matrix would come out of the optimization theory, that would be better than just a perhaps unfounded assumption.
